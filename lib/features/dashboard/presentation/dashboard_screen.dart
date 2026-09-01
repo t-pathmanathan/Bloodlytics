@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/greetings_header.dart';
+import '../widgets/latest_report_card.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -18,8 +19,8 @@ class DashboardScreen extends StatelessWidget {
                 GreetingHeader(),
                 SizedBox(height: 24),
 
-                // LatestReportCard(),
-                // SizedBox(height: 24),
+                LatestReportCard(),
+                SizedBox(height: 24),
 
                 // HealthSummaryCard(),
                 // SizedBox(height: 24),

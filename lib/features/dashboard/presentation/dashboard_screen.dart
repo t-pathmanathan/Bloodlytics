@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../widgets/greetings_header.dart';
 import '../widgets/latest_report_card.dart';
 import '../widgets/health_summary_card.dart';
+import '../widgets/key_biomarkers_section.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -26,8 +27,8 @@ class DashboardScreen extends StatelessWidget {
                 HealthSummaryCard(),
                 SizedBox(height: 24),
 
-                // KeyBiomarkersSection(),
-                // SizedBox(height: 24),
+                KeyBiomarkersSection(),
+                SizedBox(height: 24),
 
                 // RecentInsightCard(),
               ],

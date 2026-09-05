@@ -4,6 +4,7 @@ import '../widgets/greetings_header.dart';
 import '../widgets/latest_report_card.dart';
 import '../widgets/health_summary_card.dart';
 import '../widgets/key_biomarkers_section.dart';
+import '../widgets/recent_insight_card.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -30,7 +31,7 @@ class DashboardScreen extends StatelessWidget {
                 KeyBiomarkersSection(),
                 SizedBox(height: 24),
 
-                // RecentInsightCard(),
+                RecentInsightCard(),
               ],
             ),
           ),

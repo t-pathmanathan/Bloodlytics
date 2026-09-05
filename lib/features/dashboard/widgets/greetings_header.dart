@@ -9,12 +9,10 @@ class GreetingHeader extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Hello, Thilochan',
-          style: Theme.of(
-            context,
-          ).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
+          'Good morning, Thilochan',
+          style: Theme.of(context).textTheme.headlineSmall,
         ),
-        const SizedBox(height: 4),
+        const SizedBox(height: 6),
         Text(
           "Here's your health overview.",
           style: Theme.of(context).textTheme.bodyLarge,

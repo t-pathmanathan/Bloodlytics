@@ -12,28 +12,27 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text('Dashboard')),
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-                GreetingHeader(),
-                SizedBox(height: 24),
+          padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const GreetingHeader(),
+              const SizedBox(height: 28),
 
-                LatestReportCard(),
-                SizedBox(height: 24),
+              const LatestReportCard(),
+              const SizedBox(height: 28),
 
-                HealthSummaryCard(),
-                SizedBox(height: 24),
+              const HealthSummaryCard(),
+              const SizedBox(height: 28),
 
-                KeyBiomarkersSection(),
-                SizedBox(height: 24),
+              const KeyBiomarkersSection(),
+              const SizedBox(height: 28),
 
-                RecentInsightCard(),
-              ],
-            ),
+              const RecentInsightCard(),
+            ],
           ),
         ),
       ),

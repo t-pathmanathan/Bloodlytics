@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/greetings_header.dart';
+import '../widgets/greeting_header.dart';
 import '../widgets/latest_report_card.dart';
 import '../widgets/health_summary_card.dart';
 import '../widgets/key_biomarkers_section.dart';

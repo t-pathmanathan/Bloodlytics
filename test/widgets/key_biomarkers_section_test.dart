@@ -22,6 +22,7 @@ void main() {
 
     expect(find.text('LDL Cholesterol'), findsOneWidget);
     expect(find.text('2.8'), findsOneWidget);
+    expect(find.text('mmol/L'), findsNWidgets(2));
     expect(find.text('↓ 0.3 from previous report'), findsOneWidget);
 
     expect(find.text('HDL Cholesterol'), findsOneWidget);
@@ -33,7 +34,11 @@ void main() {
     expect(find.text('%'), findsOneWidget);
     expect(find.text('→ No significant change'), findsOneWidget);
 
-    expect(find.text('mmol/L'), findsNWidgets(2));
+    expect(find.text('Within reference range'), findsNWidgets(3));
+
+    expect(find.byIcon(Icons.chevron_right), findsNWidgets(3));
+    expect(find.text('View Trend'), findsNWidgets(3));
+    expect(find.byIcon(Icons.arrow_forward), findsNWidgets(3));
     expect(find.byType(TextButton), findsNWidgets(3));
   });
 }

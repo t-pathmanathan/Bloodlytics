@@ -12,10 +12,15 @@ void main() {
     );
 
     expect(find.text('Health Overview'), findsOneWidget);
+    expect(find.text('Latest report'), findsOneWidget);
+    expect(find.text('24 biomarkers analyzed'), findsOneWidget);
+
     expect(find.text('18'), findsOneWidget);
     expect(find.text('Within Range'), findsOneWidget);
+
     expect(find.text('4'), findsOneWidget);
     expect(find.text('Monitor'), findsOneWidget);
+
     expect(find.text('2'), findsOneWidget);
     expect(find.text('Outside Range'), findsOneWidget);
 

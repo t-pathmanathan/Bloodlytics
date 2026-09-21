@@ -14,6 +14,9 @@ void main() {
     expect(find.text('Latest Lab Report'), findsOneWidget);
     expect(find.text('August 28, 2026'), findsOneWidget);
     expect(find.text('24 biomarkers analyzed'), findsOneWidget);
+
+    expect(find.byIcon(Icons.description_outlined), findsOneWidget);
+
     expect(find.text('View Report'), findsOneWidget);
     expect(find.byType(OutlinedButton), findsOneWidget);
   });

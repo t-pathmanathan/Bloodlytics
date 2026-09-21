@@ -21,7 +21,8 @@ void main() {
     );
     expect(find.text('See More'), findsOneWidget);
 
-    expect(find.byIcon(Icons.lightbulb_outline), findsOneWidget);
+    expect(find.byIcon(Icons.auto_awesome_outlined), findsOneWidget);
+    expect(find.byIcon(Icons.arrow_forward), findsOneWidget);
     expect(find.byType(TextButton), findsOneWidget);
   });
 }

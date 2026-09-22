@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/upload_report_card.dart';
+import '../widgets/report_history_section.dart';
 
 class ReportsScreen extends StatelessWidget {
   const ReportsScreen({super.key});
@@ -26,7 +27,7 @@ class ReportsScreen extends StatelessWidget {
 
               const SizedBox(height: 28),
 
-              //  const ReportHistorySection(),
+              const ReportHistorySection(),
             ],
           ),
         ),

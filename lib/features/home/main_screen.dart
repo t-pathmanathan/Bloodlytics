@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../dashboard/presentation/dashboard_screen.dart';
+import '../reports/presentation/reports_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -15,7 +16,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _pages = const [
     DashboardScreen(),
     Center(child: Text('Trends')),
-    Center(child: Text('Reports')),
+    ReportsScreen(),
     Center(child: Text('Insights')),
     Center(child: Text('Profile')),
   ];
